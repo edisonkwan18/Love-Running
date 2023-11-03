@@ -98,6 +98,7 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -111,10 +112,10 @@ footer {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
-    
+
     .nav-toggle-label {
         display: none;
     }
@@ -131,3 +132,11 @@ footer {
         margin-top: 79px;
     }
 }
+
+/* Media query: tablets and larger (992px and up) */
+@media screen and (min-width: 992px) {
+
+    /* When mouse hovered to the nav subject will be underlined */
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
