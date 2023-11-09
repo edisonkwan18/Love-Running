@@ -92,7 +92,12 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* Hero section */
@@ -200,6 +205,57 @@ main {
     line-height: 0;
 }
 
+/* Signup Page */
+#signup {
+    background: url(../images/signup-image.webp) no-repeat;
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+
+/* Make h2 in signyp form to color white */
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+/* Make text input field transparent background, font color white and spacing */
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+/* Make radio button laying */
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Make the join button have round bordar and enlarge font size to 100% */
+.join-button{
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -287,6 +343,12 @@ main {
     /* Gallery page */
     #photos {
         column-count: 3;        
+    }
+
+    /* Signup Page */
+    #signup{
+        background-position: center;
+        position: relative;
     }
 }
 
