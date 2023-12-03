@@ -172,7 +172,7 @@ main {
 /* Meetup Times Section */
 #times {
     background: url(../images/dublin-city.webp) no-repeat center center / cover;
-    /* Handles responsivity without the need for a media query */
+    /* Handles responsively without the need for a media query */
     display: flex;
     flex-wrap: wrap; 
 }
@@ -222,7 +222,7 @@ main {
     padding: 30px;
 }
 
-/* Make h2 in signyp form to color white */
+/* Make h2 in signUp form to color white */
 #signup-form > h2 {
     color: #fafafa;
     margin-bottom: 20px;
@@ -246,7 +246,7 @@ main {
     justify-content: space-between;    
 }
 
-/* Make the join button have round bordar and enlarge font size to 100% */
+/* Make the join button have round border and enlarge font size to 100% */
 .join-button{
     margin-top: 20px;
     padding: 15px 32px;
